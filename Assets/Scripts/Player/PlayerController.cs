@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour{
 
     void MoveCheck()
     {
-
+        /*
         // apply velocity to the player
         float moveDir = Input.GetAxis("Horizontal");
         
@@ -49,13 +49,33 @@ public class PlayerController : MonoBehaviour{
         else if (moveDir > 0 && facingLeft)
         {
             FlipSprite();
-        }
+        }*/
 
         // set the ball animation
-        if ((Input.GetKey("a") || Input.GetKey("d") || Input.GetKey("left") || Input.GetKey("right")))
+        if (Input.GetKey("a") ||  Input.GetKey("left"))
         {
+            rb.velocity = new Vector3(-standardSpeed, rb.velocity.y);
             anim.SetTrigger("IntoBall");
             anim.SetBool("BallRolling", true);
+            if (!facingLeft)
+            {
+                FlipSprite();
+            }
+        }
+        else
+        {
+            anim.SetBool("BallRolling", false);
+        }
+
+        if (Input.GetKey("d") || Input.GetKey("right"))
+        {
+            rb.velocity = new Vector3(standardSpeed, rb.velocity.y);
+            anim.SetTrigger("IntoBall");
+            anim.SetBool("BallRolling", true);
+            if (facingLeft)
+            {
+                FlipSprite();
+            }
         }
         else
         {
