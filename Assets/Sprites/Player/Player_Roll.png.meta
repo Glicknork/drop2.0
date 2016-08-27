@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8ffa21b78a6db77409204737878ddbcf
-timeCreated: 1471975695
+timeCreated: 1472292573
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -75,11 +75,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 453
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        y: 300
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -87,12 +87,12 @@ TextureImporter:
       name: Player_Roll_1
       rect:
         serializedVersion: 2
-        x: 300
-        y: 453
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 200
+        y: 300
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -100,12 +100,12 @@ TextureImporter:
       name: Player_Roll_2
       rect:
         serializedVersion: 2
-        x: 600
-        y: 453
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 400
+        y: 300
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -113,12 +113,12 @@ TextureImporter:
       name: Player_Roll_3
       rect:
         serializedVersion: 2
-        x: 900
-        y: 453
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 600
+        y: 300
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -126,12 +126,12 @@ TextureImporter:
       name: Player_Roll_4
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 453
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 800
+        y: 300
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -140,11 +140,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 302
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        y: 200
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -152,12 +152,12 @@ TextureImporter:
       name: Player_Roll_6
       rect:
         serializedVersion: 2
-        x: 300
-        y: 302
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 200
+        y: 200
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -165,12 +165,12 @@ TextureImporter:
       name: Player_Roll_7
       rect:
         serializedVersion: 2
-        x: 600
-        y: 302
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 400
+        y: 200
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -178,12 +178,12 @@ TextureImporter:
       name: Player_Roll_8
       rect:
         serializedVersion: 2
-        x: 900
-        y: 302
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 600
+        y: 200
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -191,12 +191,12 @@ TextureImporter:
       name: Player_Roll_9
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 302
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 800
+        y: 200
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -205,11 +205,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 151
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        y: 100
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -217,12 +217,12 @@ TextureImporter:
       name: Player_Roll_11
       rect:
         serializedVersion: 2
-        x: 299
-        y: 151
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 200
+        y: 100
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -230,12 +230,12 @@ TextureImporter:
       name: Player_Roll_12
       rect:
         serializedVersion: 2
-        x: 600
-        y: 151
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 400
+        y: 100
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -243,12 +243,12 @@ TextureImporter:
       name: Player_Roll_13
       rect:
         serializedVersion: 2
-        x: 900
-        y: 151
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 600
+        y: 100
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -256,12 +256,12 @@ TextureImporter:
       name: Player_Roll_14
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 151
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        x: 800
+        y: 100
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -271,10 +271,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -282,12 +282,12 @@ TextureImporter:
       name: Player_Roll_16
       rect:
         serializedVersion: 2
-        x: 300
+        x: 200
         y: 0
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -295,12 +295,12 @@ TextureImporter:
       name: Player_Roll_17
       rect:
         serializedVersion: 2
-        x: 600
+        x: 400
         y: 0
-        width: 300
-        height: 151
-      alignment: 9
-      pivot: {x: 0.29, y: 0.53}
+        width: 200
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

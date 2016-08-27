@@ -15,7 +15,9 @@ public class PlayerController : MonoBehaviour{
     float currentSpeed;
 
     // components
+    [HideInInspector]
     public Animator anim;
+    [HideInInspector]
     public Rigidbody2D rb;
 
     // is the player facing left?
@@ -30,39 +32,23 @@ public class PlayerController : MonoBehaviour{
 
     void Update()
     {
-        MoveCheck();
+        Movement();
     }
 
-    void MoveCheck()
-    {
-        /*
-        // apply velocity to the player
-        float moveDir = Input.GetAxis("Horizontal");
-        
-        rb.velocity = new Vector3(moveDir * standardSpeed, rb.velocity.y);
-        
-        // flip the sprite depending on direction
-        if (moveDir < 0 && !facingLeft)
-        {
-            FlipSprite();
-        }
-        else if (moveDir > 0 && facingLeft)
-        {
-            FlipSprite();
-        }*/
+    void Movement()
+    {      
 
         // set the ball animation
         if (Input.GetKey("a") ||  Input.GetKey("left"))
         {
-            rb.velocity = new Vector3(-standardSpeed, rb.velocity.y);
-            anim.SetTrigger("IntoBall");
+            rb.velocity = new Vector3(-standardSpeed, rb.velocity.y);           
             anim.SetBool("BallRolling", true);
             if (!facingLeft)
             {
                 FlipSprite();
-            }
+            }            
         }
-        else
+        if (Input.GetKeyUp("a") || Input.GetKeyUp("left"))
         {
             anim.SetBool("BallRolling", false);
         }
@@ -70,14 +56,13 @@ public class PlayerController : MonoBehaviour{
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
             rb.velocity = new Vector3(standardSpeed, rb.velocity.y);
-            anim.SetTrigger("IntoBall");
             anim.SetBool("BallRolling", true);
             if (facingLeft)
             {
                 FlipSprite();
-            }
+            }            
         }
-        else
+        if (Input.GetKeyUp("d") || Input.GetKeyUp("right"))
         {
             anim.SetBool("BallRolling", false);
         }
