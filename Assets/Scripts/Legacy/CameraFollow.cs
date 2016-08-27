@@ -13,29 +13,13 @@ public class CameraFollow : MonoBehaviour {
 	Camera cam;
 	public float cameraOffset = 0.2f;
 
-	public AudioSource source;
-	public AudioSource source2;
-	public float maxMusicVol;
-	public float startingVolume = 0.2f;
-	public float volumeIncrease = 0.05f;
-	public AudioClip gameMusic;
-	public AudioClip victoryMusic;
-
-	float victorySoundPlayed;
-	float victorySoundDelay = 10f;
-
 	// cache the player
-	public PlayerMove player;
-
+	public PlayerController player;
 
 	void Start(){
 		cam = GetComponent<Camera> ();
-		// StartCoroutine ("ChangeCamSize");
-		//source = GetComponent<AudioSource> ();
-		StartCoroutine ("IncreaseMusic");
-		source.PlayOneShot (gameMusic, startingVolume);
+		// StartCoroutine ("ChangeCamSize");			
 		}
-
 	
 	// Update is called once per frame
 	void Update () 
@@ -47,14 +31,6 @@ public class CameraFollow : MonoBehaviour {
 			Vector3 destination = transform.position + delta;
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}
-		if (player.winning == true){
-			source.Stop();
-			if ((victorySoundPlayed + victorySoundDelay) < Time.time) {
-				victorySoundPlayed = Time.time;
-				source2.PlayOneShot (victoryMusic, 0.5f);
-			}
-		}
-		
 	}
 
 	IEnumerator ChangeCamSize(){
@@ -65,13 +41,6 @@ public class CameraFollow : MonoBehaviour {
 		}
 	}
 
-	IEnumerator IncreaseMusic(){
-		if (source.volume <= maxMusicVol) {
-			source.volume += volumeIncrease;
-			yield return new WaitForSeconds (1);
-			StartCoroutine ("IncreaseMusic");
-		}
 	
-	}
 
 }
