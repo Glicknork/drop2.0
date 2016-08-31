@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraController : MonoBehaviour
 {
 
-    public float dampTime = 0.15f;
+    public float dampTime = 0f;
     private Vector3 velocity = Vector3.zero;
 
     // for changing what the camera is looking at

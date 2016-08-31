@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour{
 
     public float standardSpeed;
     float currentSpeed;
+    public int currentCoins;
 
     // components
     [HideInInspector]
@@ -43,7 +44,7 @@ public class PlayerController : MonoBehaviour{
         }
         if (!Grounded())
         {
-            Falling();
+            //Falling();
         }
     }
 
@@ -63,8 +64,9 @@ public class PlayerController : MonoBehaviour{
         anim.SetBool("Falling", false);
         // set the ball animation
         if (Input.GetKey("a") ||  Input.GetKey("left"))
-        {            
-            rb.velocity = new Vector3(-standardSpeed, rb.velocity.y);           
+        {
+            //rb.velocity = new Vector3(-standardSpeed, rb.velocity.y);     
+            rb.AddForce(new Vector3(-standardSpeed, rb.velocity.y));      
             anim.SetBool("BallRolling", true);
             playerState = PlayerState.ROLLING;
             if (!facingLeft)
@@ -80,7 +82,8 @@ public class PlayerController : MonoBehaviour{
         }
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
-            rb.velocity = new Vector3(standardSpeed, rb.velocity.y);
+            //rb.velocity = new Vector3(standardSpeed, rb.velocity.y);
+            rb.AddForce(new Vector3(standardSpeed, rb.velocity.y));
             anim.SetBool("BallRolling", true);
             playerState = PlayerState.ROLLING;
             if (facingLeft)
@@ -110,6 +113,11 @@ public class PlayerController : MonoBehaviour{
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    public void IncreaseCoins(int ammount)
+    {
+        currentCoins += ammount;
     }
 
 }
